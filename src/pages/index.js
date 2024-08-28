@@ -9,7 +9,7 @@ export default function Home() {
   const generateTweet = async () => {
     try {
       setLoading(true);
-      const response = await fetch("https://ai-tweet-generator-alpha.vercel.app/api/tweet-generator", {
+      const response = await fetch("/api/tweet-generator", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
