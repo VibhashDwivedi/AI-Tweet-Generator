@@ -26,14 +26,7 @@ export default function Home() {
     }
   };
 
-   const copyToClipboard = () => {
-    navigator.clipboard.writeText(tweet).then(() => {
-      alert("Tweet copied to clipboard!");
-    }).catch(err => {
-      console.error("Failed to copy tweet:", err);
-    });
-  };
-
+   
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
       <div className="bg-white shadow-lg rounded-lg p-6 space-y-4 w-96">
